@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpyt1h0fh8yij"]
+
+[ext_resource type="Script" path="res://moving updowncheese.gd" id="1_haiwk"]
+[ext_resource type="Texture2D" uid="uid://6quls3wc0sg1" path="res://Assets/maxresdefault.jpg" id="2_mvksg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u31ko"]
+size = Vector2(174, 57)
+
+[node name="AnimatableBody2D" type="StaticBody2D"]
+position = Vector2(-67.9577, 0)
+script = ExtResource("1_haiwk")
+metadata/_edit_group_ = true
+
+[node name="Maxresdefault" type="Sprite2D" parent="."]
+position = Vector2(120, -1)
+texture = ExtResource("2_mvksg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(119.958, -1.5)
+shape = SubResource("RectangleShape2D_u31ko")

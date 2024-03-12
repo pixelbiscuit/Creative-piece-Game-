@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyy2k232x0awu"]
+
+[ext_resource type="Script" path="res://AnimatableBody2D.gd" id="1_fvh7w"]
+[ext_resource type="Texture2D" uid="uid://6quls3wc0sg1" path="res://Assets/maxresdefault.jpg" id="2_6jakq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u31ko"]
+size = Vector2(174, 57)
+
+[node name="AnimatableBody2D" type="StaticBody2D"]
+position = Vector2(-67.9577, 0)
+script = ExtResource("1_fvh7w")
+metadata/_edit_group_ = true
+
+[node name="Maxresdefault" type="Sprite2D" parent="."]
+position = Vector2(120, -1)
+texture = ExtResource("2_6jakq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(119.958, -1.5)
+shape = SubResource("RectangleShape2D_u31ko")

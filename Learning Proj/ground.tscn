@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d34efeuggk1of"]
+
+[ext_resource type="Texture2D" uid="uid://cyi3rnip731t0" path="res://Assets/1293013-1920x1080-desktop-1080p-deep-rock-galactic-background.jpg" id="1_a4wcn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmvhp"]
+size = Vector2(1028, 148.993)
+
+[node name="GROUND" type="StaticBody2D"]
+position = Vector2(156, -93.5)
+scale = Vector2(1, 1.00676)
+
+[node name="1293013-1920x1080-desktop-1080p-deep-rock-galactic-background" type="Sprite2D" parent="."]
+position = Vector2(-177, 199.154)
+scale = Vector2(1.00097, 1.00669)
+texture = ExtResource("1_a4wcn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-177, 199.154)
+shape = SubResource("RectangleShape2D_xmvhp")

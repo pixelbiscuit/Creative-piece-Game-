@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://frwsa75pp8jw"]
+
+[ext_resource type="Texture2D" uid="uid://b4ef8dsfaeg2r" path="res://360_F_320317137_6QHqx4my61hiRkHMsK7JwWmnvQmjSEpOTHIN.jpg" id="1_buyia"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="360F3203171376qHqx4My61HiRkHMsK7JwWmnvQmjSEpOthin" type="Sprite2D" parent="."]
+position = Vector2(30, 56)
+scale = Vector2(1.02825, 1)
+texture = ExtResource("1_buyia")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-4.8845, 0)
+scale = Vector2(1.0279, 1)
+polygon = PackedVector2Array(-54.5924, -124, 122.468, -124, 122.468, 236, -54.5924, 236)

@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://kwrtrs37ook1"]
+
+[ext_resource type="Texture2D" uid="uid://bkug6lac7xg2f" path="res://Assets/Azure_weald_preview.webp" id="1_dingx"]
+[ext_resource type="PackedScene" uid="uid://dsuvjdoetv130" path="res://ellis.tscn" id="1_lh6ev"]
+[ext_resource type="Texture2D" uid="uid://buf2umja8yefw" path="res://Assets/wp9630975.jpg" id="2_j5rmk"]
+[ext_resource type="Texture2D" uid="uid://cyi3rnip731t0" path="res://Assets/1293013-1920x1080-desktop-1080p-deep-rock-galactic-background.jpg" id="3_r1fkd"]
+[ext_resource type="Texture2D" uid="uid://dyka8agumarjj" path="res://Assets/wp9630967.jpg" id="4_hlrht"]
+[ext_resource type="Texture2D" uid="uid://blowq31m6mr6l" path="res://Assets/Glacial_strata_preview.webp" id="5_1ik1c"]
+[ext_resource type="Texture2D" uid="uid://ctoj6fe3dd404" path="res://Assets/067031.jpg" id="6_naf6p"]
+[ext_resource type="Texture2D" uid="uid://blikaql3pb0gf" path="res://Assets/6854b137-28aa-4dc2-bd63-bd6248bb7402.png" id="7_3spxf"]
+[ext_resource type="Texture2D" uid="uid://2aqwewooon83" path="res://Assets/Salt_pits_preview.webp" id="8_ndpmb"]
+[ext_resource type="Texture2D" uid="uid://cpc4gopqsyfcu" path="res://Assets/Dense_biozone_preview.webp" id="9_oyca0"]
+[ext_resource type="Texture2D" uid="uid://dnqjj6t5cqagj" path="res://Assets/Sandblasted_corridors_preview.webp" id="10_xgjj2"]
+[ext_resource type="Texture2D" uid="uid://6quls3wc0sg1" path="res://Assets/maxresdefault.jpg" id="11_3jv8m"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Character" type="Node2D" parent="."]
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="AzureWealdPreview" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(576, 321)
+scale = Vector2(1.125, 1.27734)
+texture = ExtResource("1_dingx")
+metadata/_edit_lock_ = true
+
+[node name="Wp9630975" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(576, -404)
+scale = Vector2(0.6, 0.737037)
+texture = ExtResource("2_j5rmk")
+metadata/_edit_lock_ = true
+
+[node name="GROUND" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(576, 726.5)
+scale = Vector2(1.12171, 1.06081)
+texture = ExtResource("3_r1fkd")
+metadata/_edit_lock_ = true
+
+[node name="Wp9630967" type="Sprite2D" parent="."]
+position = Vector2(576, -1196.5)
+scale = Vector2(0.531365, 0.575912)
+texture = ExtResource("4_hlrht")
+metadata/_edit_lock_ = true
+
+[node name="GlacialStrataPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -1956)
+scale = Vector2(1.125, 1.42578)
+texture = ExtResource("5_1ik1c")
+metadata/_edit_lock_ = true
+
+[node name="067031" type="Sprite2D" parent="."]
+position = Vector2(576, -2654.5)
+scale = Vector2(1.40659, 1.44685)
+texture = ExtResource("6_naf6p")
+metadata/_edit_lock_ = true
+
+[node name="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402" type="Sprite2D" parent="."]
+position = Vector2(576, -3306.5)
+scale = Vector2(1.04727, 1.03074)
+texture = ExtResource("7_3spxf")
+metadata/_edit_lock_ = true
+
+[node name="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402" type="Sprite2D" parent="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402"]
+position = Vector2(790.063, -641.625)
+rotation = 4.92706
+scale = Vector2(1.06234, 1.19096)
+texture = ExtResource("7_3spxf")
+metadata/_edit_lock_ = true
+
+[node name="SaltPitsPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -5514.5)
+scale = Vector2(1.125, 1.4668)
+texture = ExtResource("8_ndpmb")
+metadata/_edit_lock_ = true
+
+[node name="DenseBiozonePreview" type="Sprite2D" parent="."]
+position = Vector2(576, -4815.5)
+scale = Vector2(1.125, 1.26367)
+texture = ExtResource("9_oyca0")
+metadata/_edit_lock_ = true
+
+[node name="SandblastedCorridorsPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -4058.5)
+scale = Vector2(1.125, 1.69336)
+texture = ExtResource("10_xgjj2")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ENGINEER PANCAKE" type="Sprite2D" parent="Node2D"]
+position = Vector2(248, 523)
+texture = ExtResource("11_3jv8m")
+
+[node name="Ellis" parent="." instance=ExtResource("1_lh6ev")]
+position = Vector2(275, 349)

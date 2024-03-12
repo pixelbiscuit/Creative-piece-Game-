@@ -1,0 +1,164 @@
+[gd_scene load_steps=15 format=3 uid="uid://0j4q58r3yluo"]
+
+[ext_resource type="Texture2D" uid="uid://bkug6lac7xg2f" path="res://Assets/Azure_weald_preview.webp" id="1_hwnsh"]
+[ext_resource type="Texture2D" uid="uid://buf2umja8yefw" path="res://Assets/wp9630975.jpg" id="2_kwhp3"]
+[ext_resource type="Texture2D" uid="uid://dyka8agumarjj" path="res://Assets/wp9630967.jpg" id="4_q47yu"]
+[ext_resource type="Texture2D" uid="uid://blowq31m6mr6l" path="res://Assets/Glacial_strata_preview.webp" id="5_edhw8"]
+[ext_resource type="Texture2D" uid="uid://ctoj6fe3dd404" path="res://Assets/067031.jpg" id="6_s25il"]
+[ext_resource type="Texture2D" uid="uid://blikaql3pb0gf" path="res://Assets/6854b137-28aa-4dc2-bd63-bd6248bb7402.png" id="7_wjdkm"]
+[ext_resource type="Texture2D" uid="uid://2aqwewooon83" path="res://Assets/Salt_pits_preview.webp" id="8_hpnf8"]
+[ext_resource type="Texture2D" uid="uid://cpc4gopqsyfcu" path="res://Assets/Dense_biozone_preview.webp" id="9_58qui"]
+[ext_resource type="Texture2D" uid="uid://dnqjj6t5cqagj" path="res://Assets/Sandblasted_corridors_preview.webp" id="10_lk325"]
+[ext_resource type="Texture2D" uid="uid://10w4obd6rlky" path="res://Assets/ss_ec42a86c6cd8d8eb2f500ad47962f629a0cf8a91.1920x1080.jpg" id="10_ltt5q"]
+[ext_resource type="PackedScene" uid="uid://d34efeuggk1of" path="res://ground.tscn" id="11_w05ul"]
+[ext_resource type="PackedScene" uid="uid://dsuvjdoetv130" path="res://ellis.tscn" id="12_j8jf1"]
+[ext_resource type="Texture2D" uid="uid://dse3vysesf4sy" path="res://Assets/Resupply_Pod.webp" id="12_oa4ll"]
+[ext_resource type="PackedScene" uid="uid://c1qcymg118hqu" path="res://glyphid_enemy.tscn" id="14_uqw7f"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Character" type="Node2D" parent="."]
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="AzureWealdPreview" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(576, 321)
+scale = Vector2(1.125, 1.27734)
+texture = ExtResource("1_hwnsh")
+metadata/_edit_lock_ = true
+
+[node name="Wp9630975" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(576, -404)
+scale = Vector2(0.6, 0.737037)
+texture = ExtResource("2_kwhp3")
+metadata/_edit_lock_ = true
+
+[node name="Wp9630967" type="Sprite2D" parent="."]
+position = Vector2(576, -1196.5)
+scale = Vector2(0.531365, 0.575912)
+texture = ExtResource("4_q47yu")
+metadata/_edit_lock_ = true
+
+[node name="GlacialStrataPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -1956)
+scale = Vector2(1.125, 1.42578)
+texture = ExtResource("5_edhw8")
+metadata/_edit_lock_ = true
+
+[node name="067031" type="Sprite2D" parent="."]
+position = Vector2(576, -2654.5)
+scale = Vector2(1.40659, 1.44685)
+texture = ExtResource("6_s25il")
+metadata/_edit_lock_ = true
+
+[node name="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402" type="Sprite2D" parent="."]
+position = Vector2(576, -3306.5)
+scale = Vector2(1.04727, 1.03074)
+texture = ExtResource("7_wjdkm")
+metadata/_edit_lock_ = true
+
+[node name="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402" type="Sprite2D" parent="6854b137-28Aa-4Dc2-bd63-bd6248Bb7402"]
+position = Vector2(790.063, -641.625)
+rotation = 4.92706
+scale = Vector2(1.06234, 1.19096)
+texture = ExtResource("7_wjdkm")
+metadata/_edit_lock_ = true
+
+[node name="SaltPitsPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -5514.5)
+scale = Vector2(1.125, 1.4668)
+texture = ExtResource("8_hpnf8")
+metadata/_edit_lock_ = true
+
+[node name="DenseBiozonePreview" type="Sprite2D" parent="."]
+position = Vector2(576, -4815.5)
+scale = Vector2(1.125, 1.26367)
+texture = ExtResource("9_58qui")
+metadata/_edit_lock_ = true
+
+[node name="SandblastedCorridorsPreview" type="Sprite2D" parent="."]
+position = Vector2(576, -4058.5)
+scale = Vector2(1.125, 1.69336)
+texture = ExtResource("10_lk325")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1080" type="Sprite2D" parent="."]
+position = Vector2(576.5, -804.75)
+scale = Vector2(0.739242, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1081" type="Sprite2D" parent="."]
+position = Vector2(576, -3625)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1082" type="Sprite2D" parent="."]
+position = Vector2(576, -2988)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1083" type="Sprite2D" parent="."]
+position = Vector2(576, -2321)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1086" type="Sprite2D" parent="."]
+position = Vector2(576, -5139)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1088" type="Sprite2D" parent="."]
+position = Vector2(576, -5941)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1087" type="Sprite2D" parent="."]
+position = Vector2(576, -4492)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1084" type="Sprite2D" parent="."]
+position = Vector2(575.5, -1591)
+scale = Vector2(0.739242, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="SsEc42a86c6Cd8d8Eb2f500Ad47962f629a0Cf8a91_1920x1085" type="Sprite2D" parent="."]
+position = Vector2(576, -6)
+scale = Vector2(0.739884, 0.571823)
+texture = ExtResource("10_ltt5q")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ResupplyPod" type="Sprite2D" parent="."]
+position = Vector2(240, 577)
+scale = Vector2(0.222546, 0.182788)
+texture = ExtResource("12_oa4ll")
+metadata/_edit_lock_ = true
+
+[node name="Ellis" parent="." instance=ExtResource("12_j8jf1")]
+position = Vector2(587, 336)
+
+[node name="Camera2D" type="Camera2D" parent="Ellis"]
+position = Vector2(-7, -11)
+scale = Vector2(1200, 1e+06)
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = -10000
+limit_right = 1152
+
+[node name="GROUND" parent="." instance=ExtResource("11_w05ul")]
+position = Vector2(777, 327)
+scale = Vector2(1.13833, 2.49646)
+metadata/_edit_lock_ = true
+
+[node name="Glyphid enemy" parent="." instance=ExtResource("14_uqw7f")]
+position = Vector2(391, 611)

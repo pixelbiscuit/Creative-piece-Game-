@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsuvjdoetv130"]
+
+[ext_resource type="Script" path="res://Main Physics for ELLIS.gd" id="1_voh6k"]
+[ext_resource type="Texture2D" uid="uid://cqlnbskvy1412" path="res://Assets/imgonline-com-ua-ReplaceColor-JT0REEb6jGhxw (1).png" id="2_7pul8"]
+[ext_resource type="Texture2D" uid="uid://dskkobw7w8rai" path="res://Assets/Scout.webp" id="2_ikl3d"]
+
+[node name="Ellis" type="CharacterBody2D"]
+position = Vector2(27, 5)
+script = ExtResource("1_voh6k")
+
+[node name="Imgonline-com-ua-replaceColor-jt0reEb6jGhxw(1)" type="Sprite2D" parent="."]
+position = Vector2(-33, -30)
+rotation = 0.162873
+scale = Vector2(0.0912698, 0.0934829)
+texture = ExtResource("2_7pul8")
+
+[node name="Scout" type="Sprite2D" parent="."]
+position = Vector2(-0.31497, -2.20486)
+rotation = 0.421356
+scale = Vector2(0.0853097, 0.0679459)
+texture = ExtResource("2_ikl3d")
+
+[node name="CollisionPolygon2DPICKAXE" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1.00224, 1)
+polygon = PackedVector2Array(61, -42, 51, -46, 44, -48, 37, -50, 38.9129, -31, 29.933, -49, 27.9375, -58, 45, -52, 50, -50, 61, -45)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-29, 55, -32, 55, -36, 55, -44, 55, -44, 54, -42, 50, -40, 45, -39, 42, -38, 39, -37, 36, -36, 32, -36, 29, -36, 24, -36, 22, -36, 21, -36, 16, -36, 10, -36, 8, -36, 5, -36, 0, -36, -5, -39, -4, -41, -2, -44, 0, -50, 3, -53, -2, -52, -9, -50, -15, -46, -22, -39, -28, -32, -32, -27, -39, -22, -45, -17, -48, -11, -49, -8, -55, -1, -58, 6, -58, 12, -57, 15, -55, 19, -52, 23, -50, 27, -45, 32, -37, 32, -28, 39, -31, 41, -28, 43, -24, 43, -21, 43, -13, 42, -9, 40, -7, 34, -11, 30, -14, 38, -8, 37, -5, 37, 0, 37, 8, 37, 12, 37, 19, 37, 27, 37, 34, 37, 45, 37, 52, 37, 54, 37, 55, 25, 54, 19, 50, 16, 49, 12, 44, 9, 42, 11, 38, 13, 27, 6, 22, -3, 20, -11, 23, -13, 29, -16, 35, -18, 44, -22, 54)
+
+[node name="CollisionPolygon2DWEAKPOINT" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, -3)
+polygon = PackedVector2Array(-5, 21, -3, 20, 1, 21, 6, 22, 11, 26, -4, 26, -11, 23)
+
+[node name="CollisionPolygon2DFEET" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-43, 55, -22, 54, -22, 55, -44, 55)
+
+[node name="CollisionPolygon2DFEET2" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, -4.76837e-07)
+polygon = PackedVector2Array(37, 55, 28, 55, 19, 51, 9, 43, 12, 44, 18, 50, 28, 54)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-44, -61, -50, -60, -68, -49, -72, -41, -69, -42, -64, -46, -48, -56, -40, -57, -43, -40, -45, -23, -33, -32, -22, -44)

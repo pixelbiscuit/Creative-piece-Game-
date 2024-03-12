@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b11ley34afky2"]
+
+[ext_resource type="Texture2D" uid="uid://6quls3wc0sg1" path="res://Assets/maxresdefault.jpg" id="1_u25ay"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Maxresdefault" type="Sprite2D" parent="."]
+position = Vector2(128, 61)
+texture = ExtResource("1_u25ay")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(41, 33, 215, 33, 215, 89, 41, 89)
